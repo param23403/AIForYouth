@@ -15,8 +15,12 @@ const Navbar = () => {
     setNavOpen(!navOpen);
   };
 
+  const handleLinkClick = () => {
+    setNavOpen(false);
+  };
+
   const linkClasses = (path) =>
-    `hover:text-blue-700 ${
+    `font-bold hover:text-blue-700 ${
       pathname === path ? "bg-blue-900 text-white rounded-md px-2 py-1" : ""
     }`;
 
@@ -34,7 +38,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4 font-bold">
+        <div className="hidden md:flex space-x-4">
           <Link href="/contact" className={linkClasses("/contact")}>
             Contact
           </Link>
@@ -55,17 +59,33 @@ const Navbar = () => {
         </div>
       </div>
       {navOpen && (
-        <div className="md:hidden bg-blue-800 p-4 space-y-2">
-          <Link href="/contact" className={linkClasses("/contact")}>
+        <div className="md:hidden bg-gray-100 p-4 space-y-2">
+          <Link
+            href="/contact"
+            className={`${linkClasses("/contact")} block`}
+            onClick={handleLinkClick}
+          >
             Contact
           </Link>
-          <Link href="/people" className={linkClasses("/people")}>
+          <Link
+            href="/people"
+            className={`${linkClasses("/people")} block`}
+            onClick={handleLinkClick}
+          >
             People
           </Link>
-          <Link href="/news" className={linkClasses("/news")}>
+          <Link
+            href="/news"
+            className={`${linkClasses("/news")} block`}
+            onClick={handleLinkClick}
+          >
             News
           </Link>
-          <Link href="/application" className={linkClasses("/application")}>
+          <Link
+            href="/application"
+            className={`${linkClasses("/application")} block`}
+            onClick={handleLinkClick}
+          >
             Application
           </Link>
         </div>
