@@ -2,15 +2,13 @@ import PeopleBlock from "../../components/PeopleBlock";
 
 export const dynamic = "force-dynamic";
 export default async function PeoplePage() {
-  const response = await fetch(
-    "https://us-west-2.cdn.hygraph.com/content/cm2lmw2a5004t07ur8bs6x4lk/master",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        query: `
+  const response = await fetch(process.env.HYGRAPH_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `
         {
           peoples {
             id
@@ -21,9 +19,8 @@ export default async function PeoplePage() {
           }
         }
       `,
-      }),
-    }
-  );
+    }),
+  });
 
   const { data } = await response.json();
   const people = data.peoples || [];

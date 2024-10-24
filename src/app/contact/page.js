@@ -11,16 +11,13 @@ export default function ContactPage() {
     const email = formdata.get("email");
     const message = formdata.get("message");
 
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbyQ7mYL4SM3kGt5HLYkwbmcdV9m9Yhk-ODAnbCDJyqGciUsE_mo0Lo7WL_iHt-f87LG/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
-      }
-    );
+    const response = await fetch(process.env.GOOGLE_CONTACT_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
+    });
 
     if (!response.ok) {
       console.log(response);
