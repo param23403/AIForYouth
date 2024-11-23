@@ -50,6 +50,9 @@ const Navbar = () => {
           <Link href="/application" className={linkClasses("/application")}>
             Application
           </Link>
+          <Link href="/project" className={linkClasses("/project")}>
+            Project
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleNav} className="focus:outline-none">
