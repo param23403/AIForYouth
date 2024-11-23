@@ -24,7 +24,6 @@ export default async function PeoplePage() {
 
   const { data } = await response.json();
   const people = data.peoples || [];
-
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Our Team</h1>
