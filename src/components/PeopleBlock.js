@@ -17,7 +17,7 @@ const PeopleBlock = ({ person }) => {
       </div>
       <h2 className="text-xl font-bold mt-4 text-center">{person.name}</h2>
       <p className="text-md font-semibold text-center">
-        {capitalizeFirstLetter(person.designation)}
+        {capitalizeFirstLetter(person.title)}
       </p>
       <p className="text-sm mt-2 text-center">{person.description}</p>
     </div>

@@ -14,6 +14,7 @@ export default async function PeoplePage() {
             id
             name
             designation
+            title
             description
             image{url}
           }
@@ -25,7 +26,7 @@ export default async function PeoplePage() {
   const { data } = await response.json();
   const people = data.peoples || [];
   const categorizedPeople = {
-    professor: [],
+    team: [],
     employer: [],
     advocate: [],
   };
@@ -42,11 +43,10 @@ export default async function PeoplePage() {
 
   return (
     <div className="p-6">
-      <h1 className="text-4xl font-bold mb-4">Our Team</h1>
       {sections.map(({ designation, people }) => (
         <div key={designation} className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 capitalize">
-            {designation}s
+            {designation}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {people.map((person) => (
