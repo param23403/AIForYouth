@@ -72,6 +72,8 @@ export default function Home() {
             </a>
             if you are interested.
           </div>
+          <br />
+          <br />
         </div>
       </div>
     </main>
