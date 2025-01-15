@@ -42,6 +42,36 @@ export default function Home() {
               Link to National Science Foundation Award
             </a>
           </div>
+          <br />
+          <br />
+          <div className="text-lg sm:text-xl font-semibold text-gray-800 leading-relaxed">
+            We are looking to hire high school teachers for our project. Find
+            application information{" "}
+            <a
+              href="https://aiforyouth.vercel.app/application"
+              className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>
+            .
+          </div>
+          <br />
+          <br />
+          <div className="text-lg sm:text-xl font-semibold text-gray-800 leading-relaxed">
+            We are also looking for companies to join us in our project. Please
+            fill out the{" "}
+            <a
+              href="https://aiforyouth.vercel.app/contact"
+              className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              contact form{" "}
+            </a>
+            if you are interested.
+          </div>
         </div>
       </div>
     </main>
