@@ -74,6 +74,18 @@ export default function Home() {
           </div>
           <br />
           <br />
+          <div className="flex justify-center items-center gap-8">
+            <img
+              src="/assets/uva-Logo.png"
+              alt="UVA logo"
+              className="w-1/4 h-auto object-cover"
+            />
+            <img
+              src="/assets/nsf-logo.png"
+              alt="NSF logo"
+              className="w-1/4 h-auto object-cover"
+            />
+          </div>
         </div>
       </div>
     </main>
