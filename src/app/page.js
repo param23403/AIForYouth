@@ -3,6 +3,20 @@ export default function Home() {
     <main className="min-h-screen w-full bg-white">
       <div className="container mx-auto px-8 py-12 sm:px-12 sm:py-16">
         <div className="prose-xl max-w-none">
+          <div className="flex justify-center items-center gap-8">
+            <img
+              src="/assets/classroom.png"
+              alt="classroom1"
+              className="w-1/4 h-auto object-cover"
+            />
+            <br />
+            <img
+              src="/assets/classroom2.png"
+              alt="classroom2"
+              className="w-1/4 h-auto object-cover"
+            />
+          </div>
+          <br />
           <p className="text-lg sm:text-xl font-semibold text-gray-800 leading-relaxed">
             The AI for Youth ExLent Explorations project focuses on
             democratizing access to cutting-edge artificial intelligence (AI)
