@@ -48,7 +48,7 @@ export default function Home() {
             We are looking to hire high school teachers for our project. Find
             application information{" "}
             <a
-              href="https://aiforyouth.vercel.app/application"
+              href="https://aiforyouth.engineering.virginia.edu/application"
               className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,7 +63,7 @@ export default function Home() {
             We are also looking for companies to join us in our project. Please
             fill out the{" "}
             <a
-              href="https://aiforyouth.vercel.app/contact"
+              href="https://aiforyouth.engineering.virginia.edu/contact"
               className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
               target="_blank"
               rel="noopener noreferrer"

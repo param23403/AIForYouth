@@ -47,11 +47,19 @@ export default function Home() {
           </ul>
           <br />
           <br />
+
           <div className="text-lg sm:text-xl font-semibold text-gray-800 leading-relaxed">
-            If you are interested in joining this program, please send your
-            information to this email: rkn3gr@virginia.edu. Additionally, you
-            need to submit the school district's approval, indicating that they
-            authorize your participation in this study.
+            If you are interested in joining this program, please apply here:{" "}
+            <a
+              href="https://etap.nsf.gov/award/7301/opportunity/10188"
+              className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Application Link
+            </a>
+            . Additionally, you need to submit the school district's approval,
+            indicating that they authorize your participation in this study.
           </div>
           <br />
           <br />
