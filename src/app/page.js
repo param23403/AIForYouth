@@ -5,12 +5,6 @@ export default function Home() {
         <div className="prose-xl max-w-none">
           <div className="flex justify-center items-center gap-8">
             <img
-              src="/assets/flyer.png"
-              alt="classroom1"
-              className="w-1/4 h-auto object-cover"
-            />
-            <br />
-            <img
               src="/assets/classroom2.png"
               alt="classroom2"
               className="w-1/4 h-auto object-cover"
